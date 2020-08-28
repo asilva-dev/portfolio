@@ -1,0 +1,155 @@
+* {
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav.cabecalho {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    transition: 2s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.nav-link {
+    color: #fb0b4e;
+}
+
+.dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #fb0b4e;
+}
+
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #fae8f0 !important;
+}
+
+.am:hover {
+    color: #fb0b4e !important;
+}
+
+a:hover {
+    color: white !important;
+    text-decoration: underline;
+}
+
+ul.menu {
+    margin: 3% 0% 0% -5%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 3% 0% 0% -5%;
+}
+  
+
+div.principal {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+}
+
+.jumbotron {
+    padding: 4rem 2rem;
+}
+
+.inicio {
+    background-color: #d4c1d9;
+    height: 100vh;
+    color: white;
+}
+
+.titulo-principal {
+    font-weight: 300;
+    font-size: 9rem;
+    margin-top: 215px;
+    text-shadow: 2px 2px 4px #c67a7a;
+}
+
+.subtitulo {
+    margin-top: -2.5%;
+    margin-left: 26.5%;
+    display: flex;
+    font-weight: 200;
+    letter-spacing: 0.74rem;
+    justify-content: flex-end;
+    text-shadow: 2px 2px 4px #c67a7a;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sub-title {
+    color: #fff;
+    letter-spacing: 8px;
+    text-shadow: 2px 2px 4px #c67a7a;
+}
+
+.sobre {
+    margin-top: 10px;
+}
+
+#sobreMim {
+    background-color: #d4c1d9;
+    color: #363636;
+}
+
+#academica {
+    background-color: #d4c1d9;
+    color: #363636;
+}
+
+.position {
+    margin-left: -23%;
+    margin-top: -16px;
+}
+
+.pr-1, .px-1 {
+    padding-right: .25rem!important;
+}
+
+.alturaSkill{
+    margin-top: -16px;
+    margin-left: 3%;
+}
+.shadow-sub {
+    text-shadow: 2px 2px 4px #222;
+}
