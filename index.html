@@ -1,173 +1,582 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <link REL="SHORTCUT ICON" HREF="img/black-removebg-preview.png">
-        <title>Amanda | Front-End Developer  </title> 
-        <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    </head>
-    <body>
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>        
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <div class="inicio">   
-            <!--MENU-->
-            <nav class="navbar navbar-expand-lg fixed-top cabecalho">
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu">
-                        <li class="nav-item">
-                            <a class="nav-link " href="#inicio">INÍCIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#sobreMim">SOBRE MIM</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">COMPETÊNCIAS</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item am" href="#academica">Acadêmicas</a>
-                                <a class="dropdown-item am" href="#academica">Soft Skills</a>
-                                <a class="dropdown-item am" href="#academica">Tech Skills</a>
-                                <a class="dropdown-item am" href="#complementar">Cursos Complementares</a>
-                            </div>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">CONTATOS</a>
-                        </li>
-                    </ul>
-                </div>           
-            </nav>
-            <div class="jumbotron text-center  col-12 col-sm-12 principal" style="margin-bottom:0" id="inicio">
-                <div>
-                    <h1 class="titulo-principal">Amanda Silva</h1>
-                    <h2 class="subtitulo">FRONT-END DEVELOPER</h2>
-                </div>    
-            </div>
-            <div id="sobreMim">
-                <br><br>
-                <div class="container">
-                    <div class="row pt-4">
-                        <div class="col-md-4 pt-4 pb-5">
-                            <img class="rounded-circle float-left" src="img/me_nu.jpg" width="300" height="300" alt="Mandy">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link REL="shortcut icon" HREF="img/black-removebg-preview.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <title>Amanda | Front-End Developer </title>
+
+    <script>
+        function mostrar() {
+            document.getElementById('mais-cursos').style.display = 'block'
+            document.getElementById('btn-veja-mais').style.display = 'none'
+            document.getElementById('btn-veja-menos').style.display = 'block'
+        }
+
+        function ocultar() {
+            document.getElementById('mais-cursos').style.display = 'none'
+            document.getElementById('btn-veja-mais').style.display = 'block'
+            document.getElementById('btn-veja-menos').style.display = 'none'
+        }
+
+        function mostrarFreeem() {
+            document.getElementById('freeem').style.display == 'block' ? document.getElementById('freeem').style.display =
+                'none' : document.getElementById('freeem').style.display = 'block'
+
+            document.getElementById('btn-veja-mais-freeem').style.display == 'none' ? document.getElementById(
+                'btn-veja-mais-freeem').style.display =
+                'block' : document.getElementById('btn-veja-mais-freeem').style.display = 'none'
+
+            document.getElementById('btn-veja-menos-freeem').style.display == 'block' ? document.getElementById(
+                'btn-veja-menos-freeem').style.display =
+                'none' : document.getElementById('btn-veja-menos-freeem').style.display = 'block'
+
+        }
+
+        function mostrarZallpy() {
+            document.getElementById('zallpy').style.display == 'block' ? document.getElementById('zallpy').style.display =
+                'none' : document.getElementById('zallpy').style.display = 'block'
+
+            document.getElementById('btn-veja-mais-zallpy').style.display == 'none' ? document.getElementById(
+                'btn-veja-mais-zallpy').style.display =
+                'block' : document.getElementById('btn-veja-mais-zallpy').style.display = 'none'
+
+            document.getElementById('btn-veja-menos-zallpy').style.display == 'block' ? document.getElementById(
+                'btn-veja-menos-zallpy').style.display =
+                'none' : document.getElementById('btn-veja-menos-zallpy').style.display = 'block'
+        }
+
+        function mostrarOnSign() {
+            document.getElementById('onSign').style.display == 'block' ? document.getElementById('onSign').style.display =
+                'none' : document.getElementById('onSign').style.display = 'block'
+
+            document.getElementById('btn-veja-mais-onSign').style.display == 'none' ? document.getElementById(
+                'btn-veja-mais-onSign').style.display =
+                'block' : document.getElementById('btn-veja-mais-onSign').style.display = 'none'
+
+            document.getElementById('btn-veja-menos-onSign').style.display == 'block' ? document.getElementById(
+                'btn-veja-menos-onSign').style.display =
+                'none' : document.getElementById('btn-veja-menos-onSign').style.display = 'block'
+        }
+
+        function mostrarPf() {
+            document.getElementById('pf').style.display == 'block' ? document.getElementById('pf').style.display =
+                'none' : document.getElementById('pf').style.display = 'block'
+
+            document.getElementById('btn-veja-mais-pf').style.display == 'none' ? document.getElementById('btn-veja-mais-pf')
+                .style.display =
+                'block' : document.getElementById('btn-veja-mais-pf').style.display = 'none'
+
+            document.getElementById('btn-veja-menos-pf').style.display == 'block' ? document.getElementById(
+                'btn-veja-menos-pf').style.display =
+                'none' : document.getElementById('btn-veja-menos-pf').style.display = 'block'
+        }
+
+        function mostrarSaas() {
+            document.getElementById('saas').style.display == 'block' ? document.getElementById('saas').style.display =
+                'none' : document.getElementById('saas').style.display = 'block'
+
+            document.getElementById('btn-veja-mais-saas').style.display == 'none' ? document.getElementById(
+                'btn-veja-mais-saas').style.display =
+                'block' : document.getElementById('btn-veja-mais-saas').style.display = 'none'
+
+            document.getElementById('btn-veja-menos-saas').style.display == 'block' ? document.getElementById(
+                'btn-veja-menos-saas').style.display =
+                'none' : document.getElementById('btn-veja-menos-saas').style.display = 'block'
+        }
+
+
+        function mostrarCsc() {
+            document.getElementById('csc').style.display == 'block' ? document.getElementById('csc').style.display =
+                'none' : document.getElementById('csc').style.display = 'block'
+
+            document.getElementById('btn-veja-mais-csc').style.display == 'none' ? document.getElementById(
+                'btn-veja-mais-csc').style.display =
+                'block' : document.getElementById('btn-veja-mais-csc').style.display = 'none'
+
+            document.getElementById('btn-veja-menos-csc').style.display == 'block' ? document.getElementById(
+                'btn-veja-menos-csc').style.display =
+                'none' : document.getElementById('btn-veja-menos-csc').style.display = 'block'
+        }
+
+        function mostrarLed() {
+            document.getElementById('led').style.display == 'block' ? document.getElementById('led').style.display =
+                'none' : document.getElementById('led').style.display = 'block'
+
+            document.getElementById('btn-veja-mais-led').style.display == 'none' ? document.getElementById(
+                'btn-veja-mais-led').style.display =
+                'block' : document.getElementById('btn-veja-mais-led').style.display = 'none'
+
+            document.getElementById('btn-veja-menos-led').style.display == 'block' ? document.getElementById(
+                'btn-veja-menos-led').style.display =
+                'none' : document.getElementById('btn-veja-menos-led').style.display = 'block'
+        }
+
+        function mostrarCiasc() {
+            document.getElementById('ciasc').style.display == 'block' ? document.getElementById('ciasc').style.display =
+                'none' : document.getElementById('ciasc').style.display = 'block'
+
+            document.getElementById('btn-veja-mais-ciasc').style.display == 'none' ? document.getElementById(
+                'btn-veja-mais-ciasc').style.display =
+                'block' : document.getElementById('btn-veja-mais-ciasc').style.display = 'none'
+
+            document.getElementById('btn-veja-menos-ciasc').style.display == 'block' ? document.getElementById(
+                'btn-veja-menos-ciasc').style.display =
+                'none' : document.getElementById('btn-veja-menos-ciasc').style.display = 'block'
+        }
+
+        function mostrarByne() {
+            document.getElementById('byne').style.display == 'block' ? document.getElementById('ciasc').style.display =
+                'none' : document.getElementById('byne').style.display = 'block'
+
+            document.getElementById('btn-veja-mais-byne').style.display == 'none' ? document.getElementById(
+                'btn-veja-mais-byne').style.display =
+                'block' : document.getElementById('btn-veja-mais-byne').style.display = 'none'
+
+            document.getElementById('btn-veja-menos-byne').style.display == 'block' ? document.getElementById(
+                'btn-veja-menos-byne').style.display =
+                'none' : document.getElementById('btn-veja-menos-byne').style.display = 'block'
+        }
+
+        function mostrarVpo() {
+            document.getElementById('vpo').style.display == 'block' ? document.getElementById('ciasc').style.display =
+                'none' : document.getElementById('vpo').style.display = 'block'
+
+            document.getElementById('btn-veja-mais-vpo').style.display == 'none' ? document.getElementById(
+                'btn-veja-mais-vpo').style.display =
+                'block' : document.getElementById('btn-veja-mais-vpo').style.display = 'none'
+
+            document.getElementById('btn-veja-menos-vpo').style.display == 'block' ? document.getElementById(
+                'btn-veja-menos-vpo').style.display =
+                'none' : document.getElementById('btn-veja-menos-vpo').style.display = 'block'
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <div class="inicio">
+        <!--MENU-->
+        <nav class="navbar navbar-expand-lg fixed-top cabecalho">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">INÍCIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#sobreMim">SOBRE MIM</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">COMPETÊNCIAS</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item am" href="#academica">Acadêmicas</a>
+                            <a class="dropdown-item am" href="#academica">Soft Skills</a>
+                            <a class="dropdown-item am" href="#academica">Tech Skills</a>
+                            <a class="dropdown-item am" href="#complementar">Cursos Complementares</a>
                         </div>
-                        <div class="col-md-8">
-                            <div class="d-flex justify-content-center pt-4 pb-4">
-                                <h2 class="sub-title shadow-sub">SOBRE MIM</h2>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">CONTATOS</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron text-center  col-12 col-sm-12 principal" style="margin-bottom:0" id="inicio">
+            <div>
+                <h1 class="titulo-principal">Amanda Silva</h1>
+                <h2 class="subtitulo">FRONT-END DEVELOPER</h2>
+            </div>
+        </div>
+        <div id="sobreMim">
+            <br><br>
+            <div class="container">
+                <div class="row pt-4">
+                    <div class="col-md-4 pt-4 pb-5">
+                        <img class="rounded-circle float-left" src="img/me_nu.jpg" width="300" height="300" alt="Mandy">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="d-flex justify-content-center pt-4 pb-4">
+                            <h2 class="sub-title shadow-sub">SOBRE MIM</h2>
+                        </div>
+                        <P>
+                            Nascida e criada no Capão Redondo até os 24 anos, hoje resido em Guarulhos com a minha
+                            filha/companheira/melhor-amiga Lívia de 12 anos. Sou uma pessoa completamente apaixonada por
+                            tecnologia.
+                            Atuando como Desenvolvedora Front-End em uma grande corporação aonde todos os dias tenho a
+                            oportunidade de aprender e compartilhar, me vejo finalmente realizada profissionalmente
+                            fazendo todos os dias algo que eu realmente tenho paixão: PROGRAMAR!!!
+                        </P>
+                        <p>
+                            Participante ativa em comunidades tecnológicas, luto pela igualdade corporativa e ambientes
+                            seguros empoderar cada vez mais as mulheres e pessoas pretas a ingressarem no mercado de
+                            tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="academica">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h2 class="sub-title shadow-sub d-flex justify-content-center pt-5 pb-3">FORMAÇÃO</h2>
+                        <ul class="position">
+                            <li>Análise e Desenvolvimento de Sistemas<br />
+                                IFSP | 2017 - 2019 | Concluído</li>
+                        </ul>
+                        <ul class="position">
+                            <li>Gestão da Tecnologia da Informação<br />
+                                UNG | 2013 - 2015 | Concluído</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="sub-title shadow-sub d-flex justify-content-center pt-5 pb-3">SOFT SKILLS</h2>
+                        <ul class="alturaSkill">
+                            <li>Metodologias ágeis</li>
+                        </ul>
+                        <ul class="alturaSkill">
+                            <li>Trabalho em equipe</li>
+                        </ul>
+                        <ul class="alturaSkill">
+                            <li>Proatividade</li>
+                        </ul>
+                        <ul class="alturaSkill">
+                            <li>Resiliência</li>
+                        </ul>
+                        <ul class="alturaSkill">
+                            <li>Habilidade em documentações</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="sub-title shadow-sub d-flex justify-content-center pt-5 pb-3">TECH SKILLS</h2>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="alturaSkill">
+                                    <li>
+                                        <container class="row">
+                                            <div class="col-sm-7 pl-2-0">HTML/ CSS</div>
+                                            <container class="col-sm-4 p-0 pr-2 pt-1 d-flex justify-content-end">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img src="./img/star_border.svg" alt="" height="15px">
+                                            </container>
+                                        </container>
+                                    </li>
+                                    <li>
+                                        <container class="row">
+                                            <div class="col-sm-7 pl-2-0">Bootstrap</div>
+                                            <container class="col-sm-4 p-0 pr-2 pt-1 d-flex justify-content-end">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img src="./img/star_border.svg" alt="" height="15px">
+                                            </container>
+                                        </container>
+                                    </li>
+                                    <li>
+                                        <container class="row">
+                                            <div class="col-sm-7 pl-2-0">Javascript</div>
+                                            <container class="col-sm-4 p-0 pr-2 pt-1 d-flex justify-content-end">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img src="./img/star_border.svg" alt="" height="15px">
+                                            </container>
+                                        </container>
+                                    </li>
+                                    <li>
+                                        <container class="row">
+                                            <div class="col-sm-7 pl-2-0">Desing Responsivo</div>
+                                            <container class="col-sm-4 p-0 pr-2 pt-1 d-flex justify-content-end">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img src="./img/star_border.svg" alt="" height="15px">
+                                                <img src="./img/star_border.svg" alt="" height="15px">
+                                            </container>
+                                        </container>
+                                    </li>
+                                    <li>
+                                        <container class="row">
+                                            <div class="col-sm-7 pl-2-0">Angular</div>
+                                            <container class="col-sm-4 p-0 pr-2 pt-1 d-flex justify-content-end">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
+                                                <img src="./img/star_border.svg" alt="" height="15px">
+                                            </container>
+                                        </container>
+                                    </li>
+                                </ul>
                             </div>
-                            <P>
-                                Nascida e criada no Capão Redondo até os 24 anos, hoje resido em Guarulhos com a minha filha/companheira/melhor-amiga Lívia de 12 anos. Sou uma pessoa completamente apaixonada por tecnologia.
-                                Atuando como Desenvolvedora Front-End em uma grande corporação aonde todos os dias tenho a oportunidade de aprender e compartilhar, me vejo finalmente realizada profissionalmente fazendo todos os dias algo que eu realmente tenho paixão: PROGRAMAR!!!
-                            </P>
-                            <p>
-                                Participante ativa em comunidades tecnológicas, luto pela igualdade corporativa e ambientes seguros empoderar cada vez mais as mulheres e pessoas pretas a ingressarem no mercado de tecnologia.
-                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-5 pb-5">
+                    <div class="col-md-12 pb-4">
+                        <h2 class="sub-title  d-flex justify-content-center shadow-sub pb-4">CURSOS COMPLEMENTARES</h2>
+                        <div class="row">
+                            <div class="col-sm">
+                                <ul>
+                                    <li>Minas Programam</li>
+                                    <li>Formação Front-End Angular - Digital Innovation One</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm">
+                                <ul>
+                                    <li>AceleraDev C# Women Itaú - Codenation</li>
+                                    <li>AceleraDev Java - Codenation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="btn-veja-mais" class='mostrar'>
+                            <div class="d-flex justify-content-center mt-2">
+                                <button class="btn btn-outline-light" onClick="mostrar()">Veja mais
+                                </button>
+                            </div>
+                        </div>
+                        <div id="mais-cursos" class="ocultar">
+                            <div id="mais-cursos" class="row">
+                                <div class="col-sm">
+                                    <ul>
+                                        <li>Formação Angular 10 - O início criando 7 projetos - Udemy</li>
+                                        <li>SCRUM FOUNDATION PROFESSIONAL CERTIFICATE (SFPC) - Certiprof
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm">
+                                    <ul>
+                                        <li>Curso pratico HTML5, CSS3, JS Bootstrap, JQuery - Udemy </li>
+                                        <li>Introdução ao GitHub - Digital Innovation One</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="btn-veja-menos" class="ocultar">
+                            <div class="d-flex justify-content-center mt-2 ">
+                                <button class="btn btn-outline-light" onClick='ocultar()'>Veja menos</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="academica">
-                <div class="container">
-                    <div class="row"> 
-                        <div class="col-md-4">
-                            <h2 class="sub-title shadow-sub d-flex justify-content-center pt-5 pb-3">FORMAÇÃO</h2>  
-                            <ul class="position">
-                                <li>Análise e Desenvolvimento de Sistemas<br/>
-                                IFSP |  2017 - 2019 | Concluído</li>
-                            </ul>   
-                            <ul class="position">
-                                <li>Gestão da Tecnologia da Informação<br/>
-                                UNG | 2013 - 2015 | Concluído</li>
-                            </ul>                   
-                        </div> 
-                        <div class="col-md-4">
-                            <h2 class="sub-title shadow-sub d-flex justify-content-center pt-5 pb-3">SOFT SKILLS</h2>  
-                            <ul class="alturaSkill">
-                                <li>Metodologias ágeis</li>
-                            </ul>   
-                            <ul class="alturaSkill">
-                                <li>Trabalho em equipe</li>
-                            </ul> 
-                            <ul class="alturaSkill">
-                                <li>Proatividade</li>
-                            </ul>  
-                            <ul class="alturaSkill">
-                                <li>Resiliência</li>
-                            </ul>   
-                            <ul class="alturaSkill">
-                                <li>Habilidade em documentações</li>
-                            </ul>             
-                        </div>
-                        <div class="col-md-4">
-                            <h2 class="sub-title shadow-sub d-flex justify-content-center pt-5 pb-3">TECH SKILLS</h2>  
-                            <div class="row">
-                                <div  class="col-sm-12">
-                                    <ul class="alturaSkill">
-                                        <li>
-                                            <container class="row">
-                                                <div class="col-sm-7 pl-2-0">HTML/ CSS</div>
-                                            <container class="col-sm-4 p-0 pr-2 pt-1 d-flex justify-content-end">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img src="./img/star_border.svg" alt="" height="15px">
-                                            </container></container>
-                                        </li>
-                                        <li>
-                                            <container class="row">
-                                                <div class="col-sm-7 pl-2-0">Bootstrap</div>
-                                            <container class="col-sm-4 p-0 pr-2 pt-1 d-flex justify-content-end">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img src="./img/star_border.svg" alt="" height="15px">
-                                            </container></container>
-                                        </li>
-                                        <li>
-                                            <container class="row">
-                                                <div class="col-sm-7 pl-2-0">Javascript</div>
-                                            <container class="col-sm-4 p-0 pr-2 pt-1 d-flex justify-content-end">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img src="./img/star_border.svg" alt="" height="15px">
-                                            </container></container>
-                                        </li>
-                                        <li>
-                                            <container class="row">
-                                                <div class="col-sm-7 pl-2-0">Desing Responsivo</div>
-                                            <container class="col-sm-4 p-0 pr-2 pt-1 d-flex justify-content-end">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img src="./img/star_border.svg" alt="" height="15px">
-                                            </container></container>
-                                        </li>
-                                        <li>
-                                            <container class="row">
-                                                <div class="col-sm-7 pl-2-0">Angular</div>
-                                            <container class="col-sm-4 p-0 pr-2 pt-1 d-flex justify-content-end">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img class="pr-1" src="./img/star_completa.svg" alt="" height="15px">
-                                                <img src="./img/star_border.svg" alt="" height="15px">
-                                            </container></container>
-                                        </li>
-                                    </ul>
+        </div>
+        <div id="exp-profissionais">
+            <div class="container pb-5">
+                <div class="d-flex text-light p-3 justify-content-center">
+                    <h2 class="sub-title p-4">Experiências profissionais</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3 card pt-3 pr-3 pl-3 pb-1" onClick='mostrarByne()'>
+                            <h6 class="card-data p-1 d-flex justify-content-center text-white">Agosto/2019 - Atualmente
+                            </h6>
+                            <h4 class="d-flex justify-content-center">Accenture Brasil</h4>
+                            <div id="btn-veja-mais-byne" class="mostrar">
+                                <div class="d-flex justify-content-center mt-2 ">
+                                    <button class="btn btn-sm">Mais detalhes</button>
                                 </div>
-                            </div>           
-                        </div>                       
-                    </div>                    
+                            </div>
+                            <div id='byne' class="ocultar p-4 textEsp">
+                                <p>-Desenvolvimento de sistemas atuando como front-end com o framework Angular v7 e linguagem de consulta GraphQL. Criação de componentes e chamadas com as APIs.</p>
+                            </div>
+                            <div id="btn-veja-menos-vpo" class="ocultar">
+                                <div class="d-flex justify-content-center mt-2 ">
+                                    <button class="btn btn-sm">Ocultar detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3 card pt-3 pr-3 pl-3 pb-1" onClick='mostrarVpo()'>
+                            <h6 class="card-data p-1 d-flex justify-content-center text-white">Abril/2018 - Julho/2019
+                            </h6>
+                            <h4 class="d-flex justify-content-center">TOTVS</h4>
+                            <div id="btn-veja-mais-vpo" class="mostrar">
+                                <div class="d-flex justify-content-center mt-2 ">
+                                    <button class="btn btn-sm">Mais detalhes</button>
+                                </div>
+                            </div>
+                            <div id='freeem' class="ocultar p-4 textEsp">
+                                <p>- Ui/Ux Design</p>
+                                <p>- Protoripação, definição de fluxo</p>
+                                <p>- Figma</p>
+                            </div>
+                            <div id="btn-veja-menos-vpo" class="ocultar">
+                                <div class="d-flex justify-content-center mt-2 ">
+                                    <button class="btn btn-sm">Ocultar detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3 card pt-3 pr-3 pl-3 pb-1" onClick='mostrarFreeem()'>
+                            <h6 class="card-data p-1 d-flex justify-content-center text-white">Maio/2017 - Dezembro/2017
+                            </h6>
+                            <h4 class="d-flex justify-content-center">Reis Office</h4>
+                            <div id="btn-veja-mais-freeem" class="mostrar">
+                                <div class="d-flex justify-content-center mt-2 ">
+                                    <button class="btn btn-sm">Mais detalhes</button>
+                                </div>
+                            </div>
+                            <div id='freeem' class="ocultar p-4 textEsp">
+                                <p>- Desenvolvedora Front-end.</p>
+                                <p>- React, Redux, Bootstrap, Figma.</p>
+                            </div>
+                            <div id="btn-veja-menos-freeem" class="ocultar">
+                                <div class="d-flex justify-content-center mt-2 ">
+                                    <button class="btn btn-sm">Ocultar detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3 card pt-3 pr-3 pl-3 pb-1" onClick='mostrarZallpy()'>
+                            <h6 class="card-data p-1 d-flex justify-content-center text-white">Abril/2015 - Novembro/2015
+                            </h6>
+                            <h4 class="d-flex justify-content-center">IBM do Brasil</h4>
+                            <div id="btn-veja-mais-zallpy" class="mostrar">
+                                <div class="d-flex justify-content-center mt-2">
+                                    <button class="btn btn-sm">Mais detalhes</button>
+                                </div>
+                            </div>
+                            <div id='zallpy' class="ocultar p-4 textEsp">
+                                <p>- Migração do sistema interno da empresa para uma tecnologia mais atual (React,
+                                    Redux).</p>
+                                <p>- Reformulação das telas, melhorando a experiência do usuário e a performance do
+                                    sistema.</p>
+                                <p>- Alteração do formato dos dados vindos do Back-end.</p>
+                                <p>- Refatoração do Back-end (PHP).</p>
+                            </div>
+                            <div id="btn-veja-menos-zallpy" class="ocultar">
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-sm">Ocultar detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3 card pt-3 pr-3 pl-3 pb-1" onClick='mostrarOnSign()'>
+                            <h6 class="card-data p-1 d-flex justify-content-center text-white">Novembro/2014 -
+                                Maio/2015</h6>
+                            <h4 class="d-flex justify-content-center">FURP</h4>
+                            <div id="btn-veja-mais-onSign" class="mostrar">
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-sm">Mais detalhes</button>
+                                </div>
+                            </div>
+                            <div id='onSign' class='ocultar p-4 textEsp'>
+                                <p>- Codificar Apps para Digital Signage compatíveis em todas as plataformas
+                                    (televisões, sistemas
+                                    operacionais e navegadores).</p>
+                                <p>- JavaScript, CSS e HTML. </p>
+                            </div>
+
+                            <div id="btn-veja-menos-onSign" class="ocultar">
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-sm">Ocultar detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3 pt-3 pr-3 pl-3 pb-1" onClick='mostrarPf()'>
+                            <h6 class="card-data p-1 d-flex justify-content-center text-white">Março/2008 - Janeiro/2011
+                            </h6>
+                            <h4 class="d-flex justify-content-center">ISS – Telesp Telefônica</h4>
+                            <div id="btn-veja-mais-pf" class="mostrar">
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-sm">Mais detalhes</button>
+                                </div>
+                            </div>
+                            <div id='pf' class='ocultar p-4 textEsp'>
+                                <p>- Reestruturação do sistema interno da empresa.</p>
+                                <p>- Reformulação das telas, melhorando a experiência do usuário e a performance do
+                                    sistema.</p>
+                                <p>- Levantamento e priorização dos requisitos.</p>
+                                <p>- Organização e planejamento da equipe.</p>
+                                <p>- Documentação.</p>
+                                <p>- Mapeamento de processos.</p>
+                                <p>- Realização de testes automatizados. </p>
+                            </div>
+                            <div id="btn-veja-menos-pf" class="ocultar">
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-sm">Ocultar detalhes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mt-4">
+                    <button class="btn btn-outline-light">
+                        <a class='item-rodape' target="_blank"
+                            href="https://drive.google.com/open?id=1hnxDrZpXprjtq-N4A2dHQqM3Vf3WdU6Enpf2e6O9Fw0">
+                            Currículo completo
+                        </a>
+                    </button>
                 </div>
             </div>
-        </div>    
-    </body>
+        </div>
+
+        <div id="contato">
+            <div class="container pb-4">
+                <div class="d-flex justify-content-center p-3">
+                    <h2 class="sub-title">Contatos</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 d-flex justify-content-end">
+                        <div>
+                            <div class="d-flex justify-content-end">
+                                amanda.adgti@gmail.com
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                11 9 7627 3717
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <img src="./img/linkedin.svg" alt="" height="16px">
+                            <a href="https://www.linkedin.com/in/amanda-silva-dev/"
+                                class="item-rodape">@amandasilva</a>
+                        </div>
+                        <div>
+                            <img src="./img/git.png" alt="" height="16px">
+                            <a href="https://github.com/mandypry" class="item-rodape">@mandypry</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="d-flex justify-content-center p-3">
+            <h6>
+                Código fonte desse site disponível em <a class="item-rodape"
+                    href="https://github.com/mandypry/portfolio">
+                    github.com/mandypry/portfolio
+                </a></h6>
+        </footer>
+</body>
+
 </html>

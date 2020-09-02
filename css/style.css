@@ -96,7 +96,7 @@ div.principal {
     font-weight: 300;
     font-size: 9rem;
     margin-top: 215px;
-    text-shadow: 2px 2px 4px #c67a7a;
+    text-shadow: 2px 2px 4px #d4c1d9;
 }
 
 .subtitulo {
@@ -106,7 +106,7 @@ div.principal {
     font-weight: 200;
     letter-spacing: 0.74rem;
     justify-content: flex-end;
-    text-shadow: 2px 2px 4px #c67a7a;
+    text-shadow: 2px 2px 4px #d4c1d9;
 }
 
 .container {
@@ -120,7 +120,7 @@ div.principal {
 .sub-title {
     color: #fff;
     letter-spacing: 8px;
-    text-shadow: 2px 2px 4px #c67a7a;
+    text-shadow: 2px 2px 4px #d4c1d9;
 }
 
 .sobre {
@@ -138,7 +138,7 @@ div.principal {
 }
 
 .position {
-    margin-left: -23%;
+    margin-left: -13%;
     margin-top: -16px;
 }
 
@@ -152,4 +152,152 @@ div.principal {
 }
 .shadow-sub {
     text-shadow: 2px 2px 4px #222;
+}
+
+.pb-5, .py-5 {
+    padding-bottom: 3rem!important;
+}
+
+.pb-4, .py-4 {
+    padding-bottom: 1.5rem!important;
+}
+
+.mostrar {
+    display: block;
+}
+
+.card {
+    border: solid;
+}   
+
+footer {
+    background-color: #222;
+    color: #fff;
+}
+
+#contato {
+    background-color: #222;
+    color: #fff;
+    border-top: solid 5px;
+}
+
+#exp-profissionais {
+    background-color: #222;
+}
+
+.textEsp { 
+    color: #222 !important;
+}
+
+
+.git-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.git-link:hover {
+    text-decoration: none;
+    color: #222;
+}
+
+.item-rodape {
+    color: #fb0b4e;
+}
+
+.item-rodape:hover,
+.item-menu:hover {
+    text-decoration: none;
+    color: #d4c1d9;
+}
+
+@media (max-width: 1200px) {
+    .titulo-principal {
+        font-size: 7rem;
+    }
+
+    .subtitulo {
+        font-size: 1.28rem;
+    }
+}
+
+@media (max-width: 930px) {
+    .menu {
+        display: none;
+    }
+
+    .titulo-principal {
+        font-size: 4rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .titulo-principal {
+        font-size: 3rem;
+    }
+
+    .subtitulo {
+        font-size: 0.85rem;
+    }
+
+
+}
+
+@media (max-width: 440px) {
+    .titulo-principal {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .sub-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .sub-title {
+        font-size: 1.2rem;
+    }
+}
+
+.card-data {
+    background-color: #d4c1d9;
+}
+
+.ocultar {
+    display: none;
+}
+.mostrar {
+    display: block;
+}
+
+
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.d-flex {
+    color: #212529;
+    display: flex!important;
 }
